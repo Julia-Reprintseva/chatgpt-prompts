@@ -10,9 +10,9 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 16px;
-      line-height: 1.6;
-      color: #1a1a2e;
-      background: #f7f8fc;
+      line-height: 1.7;
+      color: #222;
+      background: #F4F3EF;
     }
 
     /* ── Layout ── */
@@ -25,28 +25,29 @@
     .sidebar {
       width: 220px;
       flex-shrink: 0;
-      background: #1F4E79;
-      color: #fff;
+      background: #F2F5EE;
+      color: #3A4A2E;
       padding: 32px 0;
       position: fixed;
       top: 0; left: 0;
       height: 100vh;
       overflow-y: auto;
+      border-right: 1px solid #C8D8B8;
     }
     .sidebar-logo {
       font-size: 13px;
       font-weight: 700;
-      color: rgba(255,255,255,.5);
+      color: #8FA67A;
       text-transform: uppercase;
       letter-spacing: .08em;
       padding: 0 20px 24px;
-      border-bottom: 1px solid rgba(255,255,255,.12);
+      border-bottom: 1px solid #C8D8B8;
       margin-bottom: 12px;
     }
     .nav-item {
       display: block;
       padding: 10px 20px;
-      color: rgba(255,255,255,.7);
+      color: #5A7048;
       text-decoration: none;
       font-size: 14px;
       font-weight: 500;
@@ -55,13 +56,13 @@
       transition: background .15s, color .15s, border-color .15s;
     }
     .nav-item:hover {
-      background: rgba(255,255,255,.08);
-      color: #fff;
+      background: #E2EAD8;
+      color: #3A4A2E;
     }
     .nav-item.active {
-      background: rgba(255,255,255,.12);
-      color: #fff;
-      border-left-color: #7ec8f4;
+      background: #D8E5C8;
+      color: #2A3820;
+      border-left-color: #8FA67A;
       font-weight: 700;
     }
 
@@ -71,7 +72,7 @@
       flex: 1;
       padding: 40px 48px 80px;
       max-width: 860px;
-      border-left: 1px solid #dde5f0;
+      border-left: 1px solid #ddd8d0;
     }
 
     /* ── Sections ── */
@@ -80,23 +81,23 @@
 
     /* ── Telegram banner ── */
     .tg-banner {
-      background: #eef4ff;
-      border: 1.5px solid #2E75B6;
+      background: #F0F4E8;
+      border: 1.5px solid #B8CC98;
       border-radius: 10px;
       padding: 18px 22px;
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
     .tg-banner-label {
       font-size: 13px;
       font-weight: 700;
-      color: #1F4E79;
+      color: #445A35;
       text-transform: uppercase;
       letter-spacing: .06em;
       margin-bottom: 10px;
     }
     .tg-banner a {
       display: block;
-      color: #2E75B6;
+      color: #6A8A50;
       text-decoration: none;
       padding: 5px 0;
       font-size: 15px;
@@ -116,34 +117,34 @@
       font-size: 32px;
       font-weight: 800;
       line-height: 1.2;
-      color: #1a1a2e;
+      color: #1a1a1a;
       margin-bottom: 8px;
     }
     .subtitle {
       font-size: 18px;
-      color: #555;
+      color: #666;
       font-style: italic;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
     .intro p {
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       color: #333;
     }
 
     /* ── Section headings ── */
     h2 {
-      font-size: 22px;
+      font-size: 21px;
       font-weight: 700;
-      color: #1F4E79;
-      margin: 48px 0 16px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #d0e3f5;
+      color: #445A35;
+      margin: 56px 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #C8D8B8;
     }
     h3 {
       font-size: 17px;
-      font-weight: 700;
-      color: #1a1a2e;
-      margin: 28px 0 10px;
+      font-weight: 600;
+      color: #222;
+      margin: 32px 0 10px;
     }
 
     /* ── Lists ── */
@@ -159,7 +160,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #1F4E79;
+      background: #8FA67A;
       color: #fff;
       padding: 8px 16px;
       border-radius: 8px 8px 0 0;
@@ -181,8 +182,8 @@
     .copy-btn.copied { background: #2e7d52; border-color: #2e7d52; }
 
     pre {
-      background: #f0f6ff;
-      border: 1.5px solid #2E75B6;
+      background: #F4F6F0;
+      border: 1.5px solid #B8CC98;
       border-top: none;
       border-radius: 0 0 8px 8px;
       padding: 18px 20px;
@@ -198,7 +199,7 @@
     /* ── Translation block ── */
     .translation {
       background: #fff;
-      border-left: 4px solid #b0c8e8;
+      border-left: 4px solid #AABE90;
       border-radius: 0 6px 6px 0;
       padding: 14px 18px;
       margin: 4px 0 24px;
@@ -235,7 +236,7 @@
       content: counter(steps);
       flex-shrink: 0;
       width: 26px; height: 26px;
-      background: #2E75B6;
+      background: #8FA67A;
       color: #fff;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
@@ -246,12 +247,12 @@
     /* ── Denis card ── */
     .denis-card {
       background: #fff;
-      border: 1.5px solid #d0e3f5;
+      border: 1.5px solid #C8D8B8;
       border-radius: 10px;
       padding: 20px 24px;
       margin: 16px 0;
     }
-    .denis-card a { color: #2E75B6; font-weight: 600; }
+    .denis-card a { color: #6A8A50; font-weight: 600; }
 
     /* ── Comparison table ── */
     .comparison-table { overflow-x: auto; margin: 16px 0; }
@@ -261,7 +262,7 @@
       font-size: 14px;
     }
     .comparison-table th {
-      background: #1F4E79;
+      background: #8FA67A;
       color: #fff;
       padding: 10px 14px;
       text-align: left;
@@ -269,21 +270,34 @@
     }
     .comparison-table td {
       padding: 9px 14px;
-      border-bottom: 1px solid #e0eaf5;
+      border-bottom: 1px solid #ddd8d0;
     }
-    .comparison-table tr:nth-child(even) td { background: #f5f9ff; }
+    .comparison-table tr:nth-child(even) td { background: #f5f3f0; }
 
     /* ── Glossary ── */
-    .glossary dl { margin: 0; }
+    .glossary dl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 0;
+    }
+    .glossary .g-card {
+      background: #fff;
+      border: 1.5px solid #C8D8B8;
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
     .glossary dt {
       font-weight: 700;
-      color: #1F4E79;
-      margin-top: 12px;
+      color: #445A35;
+      font-size: 14px;
+      margin-bottom: 5px;
     }
     .glossary dd {
-      margin: 2px 0 0 0;
-      color: #444;
-      font-size: 15px;
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     /* ── Collapsible example ── */
@@ -291,7 +305,7 @@
       cursor: pointer;
       font-size: 14px;
       font-weight: 600;
-      color: #2E75B6;
+      color: #6A8A50;
       padding: 8px 0;
       list-style: none;
       display: flex;
@@ -320,12 +334,12 @@
     footer {
       margin-top: 64px;
       padding-top: 24px;
-      border-top: 1px solid #dde5f0;
+      border-top: 1px solid #ddd8d0;
       text-align: center;
       font-size: 14px;
       color: #888;
     }
-    footer a { color: #2E75B6; }
+    footer a { color: #6A8A50; }
 
     /* ── Mobile ── */
     @media (max-width: 700px) {
@@ -588,22 +602,14 @@ Step-by-step answer with CONCRETE details and key context, formatted for a deep 
       <h2>Словарь терминов</h2>
       <div class="glossary">
         <dl>
-          <dt>Кастомный GPT</dt>
-          <dd>Персональный ассистент с заданным поведением, созданный через GPT Builder.</dd>
-          <dt>GPT Builder</dt>
-          <dd>Интерфейс для создания и настройки кастомных GPT.</dd>
-          <dt>GPT Knowledge</dt>
-          <dd>База знаний кастомного GPT — набор файлов, которые он использует при ответах.</dd>
-          <dt>Проект</dt>
-          <dd>Изолированное рабочее пространство с общей памятью, файлами и инструкциями.</dd>
-          <dt>Индекс-файл</dt>
-          <dd>Каталог всех файлов проекта с описаниями и связями между ними.</dd>
-          <dt>Контекстное окно</dt>
-          <dd>Объём информации, который GPT может удержать и учесть в рамках одного запроса.</dd>
-          <dt>Markdown</dt>
-          <dd>Лёгкий текстовый формат разметки — оптимальный формат файлов для проектов.</dd>
-          <dt>Парсер</dt>
-          <dd>Встроенная способность ИИ читать и понимать структуру Markdown-текста: определять заголовки, списки, блоки кода.</dd>
+          <div class="g-card"><dt>Кастомный GPT</dt><dd>Персональный ассистент с заданным поведением, созданный через GPT Builder.</dd></div>
+          <div class="g-card"><dt>GPT Builder</dt><dd>Интерфейс для создания и настройки кастомных GPT.</dd></div>
+          <div class="g-card"><dt>GPT Knowledge</dt><dd>База знаний кастомного GPT — набор файлов, которые он использует при ответах.</dd></div>
+          <div class="g-card"><dt>Проект</dt><dd>Изолированное рабочее пространство с общей памятью, файлами и инструкциями.</dd></div>
+          <div class="g-card"><dt>Индекс-файл</dt><dd>Каталог всех файлов проекта с описаниями и связями между ними.</dd></div>
+          <div class="g-card"><dt>Контекстное окно</dt><dd>Объём информации, который GPT может удержать и учесть в рамках одного запроса.</dd></div>
+          <div class="g-card"><dt>Markdown</dt><dd>Лёгкий текстовый формат разметки — оптимальный формат файлов для проектов.</dd></div>
+          <div class="g-card"><dt>Парсер</dt><dd>Встроенная способность ИИ читать и понимать структуру Markdown-текста: определять заголовки, списки, блоки кода.</dd></div>
         </dl>
       </div>
 
