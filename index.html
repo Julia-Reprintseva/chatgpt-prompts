@@ -286,6 +286,27 @@
       font-size: 15px;
     }
 
+    /* ── Collapsible example ── */
+    .example-toggle summary {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2E75B6;
+      padding: 8px 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+    }
+    .example-toggle summary::-webkit-details-marker { display: none; }
+    .example-toggle summary::before {
+      content: '▶';
+      font-size: 11px;
+      transition: transform .2s;
+    }
+    .example-toggle[open] summary::before { transform: rotate(90deg); }
+
     /* ── Placeholder ── */
     .placeholder {
       margin-top: 80px;
@@ -656,7 +677,9 @@ Step-by-step answer with CONCRETE details and key context, formatted for a deep 
       <p><strong>Как создать:</strong> попросите ChatGPT сформировать индекс на основе уже загруженных файлов, скачайте результат в Markdown и загрузите в проект.</p>
 
       <h3>Пример файл-индекса</h3>
-      <div class="prompt-wrapper">
+      <details class="example-toggle">
+        <summary>Показать пример</summary>
+      <div class="prompt-wrapper" style="margin-top:12px;">
         <div class="prompt-header">
           <span>index.md — пример</span>
           <button class="copy-btn" onclick="copyPrompt('index-example', this)">Скопировать</button>
@@ -929,6 +952,7 @@ Step-by-step answer with CONCRETE details and key context, formatted for a deep 
 * переносить разобранные фрагменты из `inbox.md` в постоянные разделы;
 * сохранять точность формулировок.</pre>
       </div>
+      </details>
 
       <h3>Инбокс-файл (inbox.md): рабочий черновик</h3>
       <p>Инбокс-файл — это рабочая зона проекта, куда вы собираете промежуточные результаты, черновики и идеи. Туда можно копировать текущие ответы GPT, накапливать фрагменты, которые пока не оформились в отдельный документ.</p>
